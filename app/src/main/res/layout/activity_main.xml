@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/white"
     tools:context=".MainActivity">
 
 
@@ -37,19 +38,18 @@
             android:layout_marginBottom="20dp"
             android:hint="Email" />
 
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
                 android:layout_alignParentStart="true"
-                android:layout_toEndOf="@+id/iconImageView"/>
+                android:layout_toEndOf="@+id/iconImageView"
+                android:hint="Password" />
 
 
             <ImageView
@@ -58,8 +58,8 @@
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/baseline_remove_red_eye_24"
-                android:contentDescription="Search Icon"/>
+                android:contentDescription="Search Icon"
+                android:src="@drawable/baseline_remove_red_eye_24" />
 
         </RelativeLayout>
 
@@ -67,8 +67,7 @@
             android:id="@+id/btnOK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
-            android:text="OK SKALI   " />
+            android:text="OK SKALI" />
 
 
     </LinearLayout>
